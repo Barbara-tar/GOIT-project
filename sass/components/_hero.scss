@@ -9,8 +9,6 @@
     height: 636px;
     border-radius: 100px;
     background-color: transparent;
-    right: 50%;
-    transform: translateY(-50%);
   }
 
   &__content {
@@ -28,12 +26,12 @@
     text-transform: uppercase;
     margin-bottom: 0;
     text-align: center;
+    left: 50%;
+    top: 0%;
   }
 
   &__text-container {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   &__subtitle {
@@ -45,6 +43,8 @@
     line-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
+    bottom: 200%;
+    right: 125%;
 
     color: $blackColor;
   }
@@ -56,17 +56,19 @@
     width: 166px;
     height: 166px;
     fill: $blackColor;
-  }
-
-  &__text-container,
-  &__button {
-    position: absolute;
-    left: 0;
+    bottom: 200%;
+    left: 110%;
   }
 }
 
-&__text-container,
-&__subtitle {
+.hero__text-container,
+.hero__subtitle {
+  position: absolute;
+  left: 0;
+}
+
+.hero__text-container,
+.hero__button {
   position: absolute;
   right: 0;
 }
