@@ -19,15 +19,15 @@
 .modal {
   position: absolute;
   width: calc(100vw - 30px);
-  max-width: 450px;
-  min-height: 581px;
+  max-width: 480px;
+  min-height: 511px;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 30px;
 
   background: $whiteColor;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(215, 215, 215, 1),
+    0px 1px 1px rgba(215, 215, 215, 1), 0px 2px 1px rgba(215, 215, 215, 1);
   border-radius: 8px;
 
   transform: translate(-50%, -50%) scale(1);
@@ -49,19 +49,21 @@
     padding: 5px;
     height: 30px;
     background-color: $whiteColor;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(215, 215, 215, 1);
     cursor: pointer;
   }
 
   &__close-button:hover,
   &__close-button:focus {
-    background-color: $highlightColor;
-    fill: $whiteColor;
+    background-color: $sendButton;
+    fill: $sendButton;
   }
 
   &__title {
     font-size: 20px;
     line-height: 1.5;
+    text-decoration-style: bold;
+    font-weight: 400px;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 12px;
@@ -87,7 +89,7 @@
   }
 
   &__form-input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(215, 215, 215, 1);
     border-radius: 4px;
     height: 40px;
     padding-left: 41px;
@@ -95,7 +97,7 @@
 
   &__form-input:hover,
   &__form-input:focus {
-    border-color: $highlightColor;
+    border-color: rgba(215, 215, 215, 1);
     outline: none;
   }
 
@@ -107,70 +109,7 @@
 
   &__form-item:hover,
   &__form-item:focus-within {
-    fill: $highlightColor;
-  }
-
-  &__form-comment {
-    padding: 12px 16px;
-    min-height: 120px;
-  }
-
-  &__form-comment::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-  }
-
-  &__form-checkbox {
-    margin-top: 10px;
-  }
-
-  &__form-regulations {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: $supportColor;
-
-    text-align: center;
-    display: block;
-
-    position: relative;
-  }
-
-  &__form-regulations-text {
-    padding-left: 24px;
-  }
-
-  &__form-regulations input[type="checkbox"] {
-    background-color: $whiteColor;
-    appearance: none;
-    width: 16px;
-    height: 15px;
-    border: 2px solid $blackColor;
-    border-radius: 2px;
-
-    position: absolute;
-    transform: translateY(-50%);
-  }
-
-  &__form-checkbox-svg {
-    position: absolute;
-    transform: translateY(-50%);
-    opacity: 0;
-    fill: none;
-  }
-
-  &__form-regulations input[type="checkbox"]:checked + &__form-checkbox-svg {
-    opacity: 1;
-  }
-
-  &__form-checkbox-svg:hover,
-  &__form-checkbox-svg:focus {
-    background-color: $highlightColor;
-    fill: $whiteColor;
-  }
-
-  &__form-regulations-link {
-    color: $highlightColor;
+    fill: $sendButton;
   }
 
   &__button {
@@ -178,12 +117,13 @@
     padding: 10px 76px;
     margin: 20px auto 0;
     display: block;
-    fill: $whiteColor;
+    fill: $sendButton;
   }
 
   &__button:hover {
-    background-color: #188ce8;
+    background-color: $sendButton;
     fill: $sendButton;
+    color: $whiteColor;
   }
 }
 
