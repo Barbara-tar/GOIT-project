@@ -1,16 +1,16 @@
 // Przyciski
 %button {
-  background-color: $highlightColor;
-  box-shadow: 0px 4px 4px $boxShadowColor;
+  background-color: transparent;
+  box-shadow: transparent;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: $whiteColor;
-  fill: $whiteColor;
+  color: $blackColor;
+  fill: $blackColor;
   cursor: pointer;
-  border-style: none;
+  border-style: line $supportColor;
 
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
