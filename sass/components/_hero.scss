@@ -13,11 +13,15 @@
 
   &__content {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   &__title {
+    position: absolute;
     font-family: "Montserrat", sans-serif;
-    width: 876px;
+    max-width: 876px;
     height: 195px;
     font-weight: 400;
     font-size: 160px;
@@ -27,50 +31,40 @@
     margin-bottom: 0;
     text-align: center;
     left: 50%;
-    top: 0%;
+    top: 85%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 
   &__text-container {
-    position: absolute;
+    height: 424px;
   }
 
   &__subtitle {
     width: 101px;
-    height: 78px;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 32px;
     line-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    bottom: 200%;
-    right: 125%;
+    margin-right: 43px;
 
     color: $blackColor;
   }
 
   &__button {
     @extend %button;
-    padding: 10px 50px;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 25px;
     width: 166px;
     height: 166px;
     fill: $blackColor;
-    bottom: 200%;
-    left: 110%;
+    top: 50%;
+    right: 10%;
+    transform: translateX (50%, -10%);
   }
-}
-
-.hero__text-container,
-.hero__subtitle {
-  position: absolute;
-  left: 0;
-}
-
-.hero__text-container,
-.hero__button {
-  position: absolute;
-  right: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
